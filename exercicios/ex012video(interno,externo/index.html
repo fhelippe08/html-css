@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+   <h1>Inserindo Videos Hospedados Localmente</h1>
+   <p>Este video esta Hospedado no meu Propio Servidor.</p>
+   <video src="midia/meu-video.mp4" width="300" controls></video>
+   <h1>Ou(essa forma e mais ampla pega em todos os sites)!</h1>
+   <p>se um tipo de imagem nao pegar em certo navegador ai ele tenta outro, e outro, e etc..</p>
+   <video controls width="300">
+    <source src="midia/meu-video.mp4" type="">
+    <source src="midia/Meu-Video2.mp4" type="">
+    <source src="midia/Meu-Video(1).webm" type="">
+    <source src="midia/meu-video.ogv" type="">
+   </video> 
+   <p>ou(com foto na capa do video! adicionar "poster" e local da pasta/foto dentro da tag video)</p>
+   <video poster="imagens/imagemlimao.webp" controls width="300">
+    <source src="midia/meu-video.mp4" type="">
+   </video>
+   <h1>Inserindo videos do Youtube(externo)(vai no video compartilhar e imcorporar, copia o linkgrande e cola)!</h1>
+   <iframe width="300" height="200" src="https://www.youtube.com/embed/jPWsBuiy1rE?si=5FLC_iIDYjHqQM0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <h1>Agora Outro Video(site vimeo)mesmo equema, compartilhar,imcorporar etc...</h1>
+   <iframe title="vimeo-player" src="https://player.vimeo.com/video/137613889?h=99f7e213b8" width="300" height="200" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+</body>
+</html>
